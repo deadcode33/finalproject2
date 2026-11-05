@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>XStore</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+    <!-- CSS Files -->
+   
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+
+<body>
+
+    <!-- ================= NAV START ================= -->
+
+    <nav>
+
+        <div class="left">
+
+            <div class="side-menu-box">
+                <button type="button" id="SideMenubtn">
+                    <i class="fa-solid fa-grip-lines"></i>
+                </button>
+            </div>
+
+            <div class="logo">
+                <img src="./assets/images/Logo.jpg" alt="XStore Logo">
+            </div>
+
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html" class="active">Our Products</a></li>
+                <li><a href="#">Journal</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+
+            <div class="drop-down-box">
+
+                <span id="money">US$</span>
+                <i class="fa-solid fa-angle-down"></i>
+
+                <div class="drop-down">
+                    <div class="option">UK$</div>
+                    <div class="option">EG$</div>
+                </div>
+
+            </div>
+
+            <div class="actions">
+
+                <button type="button" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button type="button" id="accountBtn">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+
+                <button type="button" class="cart-btn" id="openCart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>0</span>
+                </button>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ================= NAV END ================= -->
+
+
+    <!-- ================= SIDE MENU START ================= -->
+
+    <div class="side-menu-layout">
+
+        <div class="side-menu">
+
+            <div class="close-box">
+                <button type="button" id="closeMenuBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <div class="logo">
+                <img src="./assets/images/Logo.jpg" alt="XStore Logo">
+            </div>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search For Products">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div class="links">
+
+                <a href="#">Home</a>
+                <a href="#">Our Products</a>
+                <a href="#">Journal</a>
+                <a href="#">About Us</a>
+                <a href="#">Contacts</a>
+
+                <a href="#">
+                    <i class="fa-regular fa-user"></i>
+                    <span>Account</span>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>Cart</span>
+                    <span>$0.00</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- SIDE MENU END -->
+
+
+    <!-- CART LAYOUT -->
+
+        <div class="cart-menu-layout" id="cart-menu-layout">
+
+        <div class="cart-menu">
+
+            <button type="button" id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h3>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>Cart</span>
+            </h3>
+
+            <div class="cart-menu-box">
+
+                <p>No products in the cart</p>
+
+                <a href="./shop.html">Return to shop</a>
+
+                <div class="cart-item">
+                    <button id="delCartItem">
+                        X
+                    </button>
+                    <div class="item-image">
+                        <img src="./assets/images/Product-images-2.1-min-330x330.jpg" alt="">
+                    </div>
+
+                    <div class="item-info">
+                        <p>Product Name</p>
+                        <div class="price-info">
+
+                            <div class="amount-box">
+                                <button>+</button>
+                                <span>0</span>
+                                <button>-</button>
+                            </div>
+                            <b>x 200.89</b>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="carttotal">
+                total cost: <span>$400.5</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <section class="shop-header">
+        <h2>
+            All <span>Products</span>
+        </h2>
+            <p>Shop now, not later. Browse the best of our favorite sale styles and brands.</p>
+            <div class="box category-filter">
+
+    <button class="active" data-category="all">
+        ALL PRODUCTS
+    </button>
+
+    <button data-category="Audio">
+        AUDIO
+    </button>
+
+    <button data-category="Wearables">
+        WEARABLES
+    </button>
+
+    <button data-category="Gaming">
+        GAMING
+    </button>
+
+    <button data-category="Computers">
+        COMPUTERS
+    </button>
+
+    <button data-category="Smart Phones">
+        SMART PHONES
+    </button>
+
+    <button data-category="Smart Home">
+        SMART HOME
+    </button>
+
+</div>
+    </section>
+
+<section class="shop-box">
+    <div class="container">
+
+
+    </div>
+</section>
+
+<!-- add alert start -->
+
+<div id="addalert">
+    <i class="fa-regular fa-circle-check"></i>
+    <span>product added</span>
+</div>
+
+<!-- add alert end -->
+
+
+
+
+
+<!-- footer start -->
+ <footer class="footer">
+
+    <!-- Top Footer -->
+    <div class="footer-top">
+
+        <!-- Company Info -->
+        <div class="footer-column company-info">
+            <h2 class="footer-logo">
+    <img src="./assets/images/XSTORE-footer-min.png" alt="XStore Logo">
+</h2>
+
+            <p>
+                <strong>Address:</strong> 1234 Fashion Street,<br>
+                Suite 567, New York, NY
+            </p>
+
+            <p><strong>Phone:</strong> +1 123 456 7890</p>
+
+            <p><strong>Email:</strong> info@example.com</p>
+        </div>
+
+
+        <!-- Collections -->
+        <div class="footer-column">
+            <h3>COLLECTIONS</h3>
+
+            <ul>
+                <li><a href="#">Headphones</a></li>
+                <li><a href="#">Speakers</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Home Cinema</a></li>
+                <li><a href="#">LED TVs</a></li>
+                <li><a href="#">Sound Bars</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Information -->
+        <div class="footer-column">
+            <h3>INFORMATION</h3>
+
+            <ul>
+                <li><a href="#">Wholesale</a></li>
+                <li><a href="#">Become a Retailer</a></li>
+                <li><a href="#">Corporate Orders</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Gifts Cards</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+
+        <!-- Newsletter -->
+        <div class="footer-column newsletter">
+            <h3>Stay Up to Date with New Releases</h3>
+
+            <p>
+                Get notified about new updates, products, tips and tutorials.
+                No spam. You can unsubscribe.
+            </p>
+
+            <form>
+                <input type="email" placeholder="Your Email ID">
+
+                <button type="submit">
+                    SUBSCRIBE
+                </button>
+            </form>
+        </div>
+
+    </div>
+
+
+    <!-- Middle Footer -->
+    <div class="footer-middle">
+
+        <div class="footer-selects">
+            <button>USD $⌄</button>
+            <button>English⌄</button>
+        </div>
+
+        <div class="payment-methods">
+            <span>VISA</span>
+            <span>UPI</span>
+            <span>Skrill</span>
+            <span>Pay</span>
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+
+    </div>
+
+
+    <!-- Bottom Footer -->
+    <div class="footer-bottom">
+
+        <p>
+            Copyright © 2026 XStore theme. Created by 8theme –
+            WordPress WooCommerce themes.
+        </p>
+
+        <div class="footer-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Refund Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Use</a>
+        </div>
+
+    </div>
+
+</footer>
+
+ <!-- footer end -->
+
+    <script src="./scripts/shop.js"></script>
+    
+
+</body>
+</html>
